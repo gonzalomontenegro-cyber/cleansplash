@@ -48,7 +48,7 @@ const RocketLaunchIcon = () => (
 
 // Content
 export const CONTACT_INFO = {
-  phone: '+56912345678',
+  phone: '+56 9 1234 5678',
   email: 'contacto@cleansplash.cl',
   facebook: 'https://facebook.com/cleansplash',
   instagram: 'https://instagram.com/cleansplash',
