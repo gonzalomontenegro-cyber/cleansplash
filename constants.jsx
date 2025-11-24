@@ -1,6 +1,6 @@
 import React from 'react';
 
-// SVG Icons for services and advantages
+// SVG Icons
 const WaterDropIcon = () => (
   <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
     <path strokeLinecap="round" strokeLinejoin="round" d="M7.5 14.25c0 2.07 1.68 3.75 3.75 3.75s3.75-1.68 3.75-3.75c0-2.07-1.68-3.75-3.75-3.75S7.5 12.18 7.5 14.25z" />
@@ -45,7 +45,25 @@ const SunIcon = () => (
   </svg>
 );
 
-// Content
+const MapIcon = () => (
+  <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+    <path strokeLinecap="round" strokeLinejoin="round" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
+  </svg>
+);
+
+const ClockIcon = () => (
+  <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+    <path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+  </svg>
+);
+
+const RocketLaunchIcon = () => (
+  <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+    <path strokeLinecap="round" strokeLinejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+  </svg>
+);
+
+// Contact info
 export const CONTACT_INFO = {
   phone: '+56 9 1234 5678',
   email: 'contacto@cleansplash.cl',
@@ -53,6 +71,7 @@ export const CONTACT_INFO = {
   instagram: 'https://instagram.com/cleansplash',
 };
 
+// Services
 export const SERVICES = [
   {
     icon: <ShieldCheckIcon />,
@@ -88,5 +107,29 @@ export const SERVICES = [
     icon: <SunIcon />,
     title: 'Limpieza de Jardines',
     description: 'Limpiamos tu jardín manteniéndolo impecable todo el año.',
+  },
+];
+
+// Advantages
+export const ADVANTAGES = [
+  {
+    icon: <MapIcon />,
+    title: 'Cobertura Total',
+    description: 'Llegamos a todas las comunas de la Región Metropolitana. Sin excepciones.',
+  },
+  {
+    icon: <ClockIcon />,
+    title: 'Puntualidad Garantizada',
+    description: 'Respetamos tu tiempo. Nuestro equipo llega a la hora acordada, siempre.',
+  },
+  {
+    icon: <RocketLaunchIcon />,
+    title: 'Eficacia y Rapidez',
+    description: 'Realizamos nuestro trabajo de forma eficiente para que disfrutes de tu piscina lo antes posible.',
+  },
+  {
+    icon: <ShieldCheckIcon />,
+    title: 'Garantía de 3 Meses',
+    description: 'Confiamos en nuestro trabajo. Ofrecemos 3 meses de garantía en todos nuestros servicios.',
   },
 ];

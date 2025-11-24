@@ -24,11 +24,6 @@ const Services = () => {
             </div>
           ))}
         </div>
-        <div className="text-center mt-12">
-            <button className="bg-gray-200 text-gray-700 font-semibold py-3 px-6 rounded-full hover:bg-gray-300 transition-colors duration-300 cursor-not-allowed" disabled>
-                Ver Catálogo Completo (Próximamente)
-            </button>
-        </div>
       </div>
     </section>
   );
