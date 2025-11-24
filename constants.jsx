@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 // SVG Icons for services and advantages
@@ -28,21 +27,21 @@ const ShieldCheckIcon = () => (
   </svg>
 );
 
-const ClockIcon = () => (
+const BeakerIcon = () => (
   <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-    <path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+    <path strokeLinecap="round" strokeLinejoin="round" d="M9 2v2.586a1 1 0 01-.293.707l-.414.414a1 1 0 000 1.414L12 12l3.707-3.707a1 1 0 000-1.414l-.414-.414A1 1 0 0115 4.586V2M9 21h6m-6 0a3 3 0 01-3-3v-2a3 3 0 013-3h6a3 3 0 013 3v2a3 3 0 01-3 3m-6 0v-6m6 6v-6" />
   </svg>
 );
 
-const MapIcon = () => (
+const AdjustmentsVerticalIcon = () => (
   <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-    <path strokeLinecap="round" strokeLinejoin="round" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
+    <path strokeLinecap="round" strokeLinejoin="round" d="M6 4v16M12 4v10m0 6v.01M18 4v4m0 6v6" />
   </svg>
 );
 
-const RocketLaunchIcon = () => (
+const SunIcon = () => (
   <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-    <path strokeLinecap="round" strokeLinejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+    <path strokeLinecap="round" strokeLinejoin="round" d="M12 3v2m0 14v2m9-9h-2M5 12H3m15.364-6.364l-1.414 1.414M6.05 17.95l-1.414 1.414m0-13.828l1.414 1.414M17.95 17.95l1.414 1.414M12 8a4 4 0 100 8 4 4 0 000-8z" />
   </svg>
 );
 
@@ -75,45 +74,19 @@ export const SERVICES = [
     title: 'Eliminación de Microorganismos',
     description: 'Aplicamos tratamientos efectivos para eliminar y prevenir la aparición de algas y bacterias.',
   },
-];
-
-export const ADVANTAGES = [
   {
-    icon: <MapIcon />,
-    title: 'Cobertura Total',
-    description: 'Llegamos a todas las comunas de la Región Metropolitana. Sin excepciones.',
+    icon: <BeakerIcon />,
+    title: 'Medición de Ph',
+    description: 'Medimos y regulamos el pH hasta obtener el pH ideal para tu piscina.',
   },
   {
-    icon: <ClockIcon />,
-    title: 'Puntualidad Garantizada',
-    description: 'Respetamos tu tiempo. Nuestro equipo llega a la hora acordada, siempre.',
+    icon: <AdjustmentsVerticalIcon />,
+    title: 'Medición de Cloro',
+    description: 'Medimos y regulamos el cloro hasta obtener el porcentaje de cloro ideal para tu piscina según su volumen.',
   },
   {
-    icon: <RocketLaunchIcon />,
-    title: 'Eficacia y Rapidez',
-    description: 'Realizamos nuestro trabajo de forma eficiente para que disfrutes de tu piscina lo antes posible.',
-  },
-  {
-    icon: <ShieldCheckIcon />,
-    title: 'Garantía de 3 Meses',
-    description: 'Confiamos en nuestro trabajo. Ofrecemos 3 meses de garantía en todos nuestros servicios.',
-  },
-];
-
-export const TESTIMONIALS = [
-  {
-    quote: 'El equipo de Clean Splash es increíblemente profesional y puntual. Mi piscina nunca se había visto tan limpia. ¡Totalmente recomendados!',
-    author: 'Ana González',
-    location: 'Las Condes',
-  },
-  {
-    quote: 'Contraté el servicio de mantenimiento para la piscina del condominio y el resultado ha sido excelente. Siempre responden rápido y son muy responsables.',
-    author: 'Carlos Rojas',
-    location: 'Maipú',
-  },
-  {
-    quote: 'Tenía un problema con el agua verde y lo solucionaron en una sola visita. Ahora el agua está cristalina. Un servicio de primera calidad.',
-    author: 'Sofía Vergara',
-    location: 'Chicureo',
+    icon: <SunIcon />,
+    title: 'Limpieza de Jardines',
+    description: 'Limpiamos tu jardín manteniéndolo impecable todo el año.',
   },
 ];
