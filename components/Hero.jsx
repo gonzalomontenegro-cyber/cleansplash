@@ -10,23 +10,22 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="relative text-white bg-cover bg-center bg-no-repeat"
+      className="relative min-h-[70vh] text-white bg-cover bg-center bg-no-repeat"
       style={{
         backgroundImage: `url(${PiscinaImg})`,
       }}
     >
-      {/* Capa oscura encima de la imagen */}
-      <div className="absolute inset-0 bg-gray-800/70"></div>
+      {/* Capa oscura encima de la imagen (un poco más suave) */}
+      <div className="absolute inset-0 bg-gray-800/50"></div>
 
       {/* Contenido */}
-      <div className="relative z-10 container mx-auto px-6 text-center py-24 md:py-32">
+      <div className="relative z-10 container mx-auto px-6 text-center pt-40 pb-32 md:pt-52 md:pb-40">
         <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-4 animate-fade-in-down">
           Expertos en mantenimiento y limpieza de Piscinas y limpieza de jardines.
         </h1>
 
         <p className="text-lg md:text-xl text-gray-200 mb-8 max-w-3xl mx-auto animate-fade-in-up">
           Brindamos servicios confiables y personalizados para que disfrutes de tu piscina sin preocupaciones y tu jardín limpio todo el año.
-
         </p>
 
         <div className="flex flex-col sm:flex-row justify-center gap-4">
