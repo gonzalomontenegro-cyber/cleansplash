@@ -24,6 +24,26 @@ const ServicesModal = ({ service, onClose }) => {
     setTimeout(onClose, 200); // esperar a que termine la animación
   };
 
+  // 👉 Ir al formulario con el mensaje del servicio prellenado
+  const handleGoToContact = () => {
+    const serviceTitle = service?.title || '';
+
+    // 1) Actualizar el hash con el nombre del servicio
+    const newHash = `#contact?service=${encodeURIComponent(serviceTitle)}`;
+    window.location.hash = newHash;
+
+    // 2) Hacer scroll suave a la sección de contacto (por si el navegador no lo hace solo)
+    const section = document.getElementById('contact');
+    if (section) {
+      const offset = 80; // por si tienes header fijo
+      const top = section.getBoundingClientRect().top + window.scrollY - offset;
+      window.scrollTo({ top, behavior: 'smooth' });
+    }
+
+    // 3) Cerrar modal
+    handleClose();
+  };
+
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center px-4">
       {/* Overlay */}
@@ -89,13 +109,13 @@ const ServicesModal = ({ service, onClose }) => {
               >
                 Cerrar
               </button>
-              <a
-                href="#contact"
-                onClick={handleClose}
+              <button
+                type="button"
+                onClick={handleGoToContact}
                 className="px-5 py-2 rounded-full bg-sky-500 text-white font-semibold hover:bg-sky-600 transition"
               >
                 Solicitar este servicio
-              </a>
+              </button>
             </div>
           </div>
         </div>

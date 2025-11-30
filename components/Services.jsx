@@ -13,6 +13,8 @@ const Services = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-sky-800">Nuestros Servicios</h2>
           <p className="text-lg text-gray-600 mt-2">
             Soluciones integrales para una piscina y un jardín impecable.
+            <br />
+            Presiona las tarjetas para ver el detalle.
           </p>
         </div>
 
