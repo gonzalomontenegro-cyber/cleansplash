@@ -21,7 +21,7 @@ const Hero = () => {
       {/* Contenido */}
       <div className="relative z-10 container mx-auto px-6 text-center pt-40 pb-32 md:pt-52 md:pb-40">
         <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-4 animate-fade-in-down">
-          Expertos en mantenimiento y limpieza de Piscinas y limpieza de jardines.
+          Expertos en mantenimiento, limpieza de Piscinas y limpieza de jardines.
         </h1>
 
         <p className="text-lg md:text-xl text-gray-200 mb-8 max-w-3xl mx-auto animate-fade-in-up">
