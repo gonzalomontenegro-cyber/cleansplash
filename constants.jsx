@@ -65,10 +65,10 @@ const RocketLaunchIcon = () => (
 
 // Contact info
 export const CONTACT_INFO = {
-  phone: '+56 9 1234 5678',
-  email: 'contacto@cleansplash.cl',
-  facebook: 'https://facebook.com/cleansplash',
-  instagram: 'https://instagram.com/cleansplash',
+  phone: '+56 9 2777 3484',
+  email: 'cleansplashservices@gmail.com',
+  facebook: 'https://www.facebook.com/profile.php?id=61582398432493&mibextid=wwXIfr&rdid=XkM1shUsuKRlmxDI&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1DcwZ7E5ta%2F%3Fmibextid%3DwwXIfr#',
+  instagram: 'https://www.instagram.com/cleansplash1/?utm_source=ig_web_button_share_sheet',
 };
 
 // Services
