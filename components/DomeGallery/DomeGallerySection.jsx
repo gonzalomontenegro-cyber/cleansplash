@@ -20,7 +20,7 @@ export default function DomeGallerySection() {
   }, []);
 
   return (
-    <section className="w-full bg-white py-16">
+    <section className="w-full bg-white py-16" id="galeria">
       <div className="max-w-6xl mx-auto px-4">
         <h2 className="text-3xl md:text-4xl font-extrabold text-[#0B5E86] text-center">Galería</h2>
         <p className="text-center text-gray-600 mt-2">Algunos trabajos y resultados reales.</p>

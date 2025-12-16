@@ -27,6 +27,13 @@ const navItems = [
     rotation: 8,
     hoverStyles: { bgColor: "#f59e0b", textColor: "#ffffff" },
   },
+    {
+    label: "Galería",
+    href: "#galeria",
+    ariaLabel: "Ir a Galeria",
+    rotation: 8,
+    hoverStyles: { bgColor: "#7a7f33ff", textColor: "#ffffff" },
+  },
   {
     label: "Elígenos",
     href: "#advantages",
