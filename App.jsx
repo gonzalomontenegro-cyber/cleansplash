@@ -5,6 +5,8 @@ import Hero from './components/Hero';
 import About from './components/About';
 import Services from './components/Services';
 import Advantages from './components/Advantages';
+import DomeGallerySection from "./components/DomeGallery/DomeGallerySection";
+
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
@@ -16,6 +18,7 @@ const App = () => {
         <Hero />
         <About />
         <Services />
+        <DomeGallerySection />
         <Advantages />
         <Contact />
       </main>
