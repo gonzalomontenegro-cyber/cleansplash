@@ -237,37 +237,58 @@ export default function DomeGallery({
     { target: mainRef, eventOptions: { passive: true } }
   );
 
-  const openImage = useCallback(
-    src => {
-      if (!src) return;
-      if (openedRef.current) return;
+const openImage = useCallback(
+  src => {
+    if (!src) return;
+    if (openedRef.current) return;
 
-      openedRef.current = true;
-      lastInteractionAtRef.current = performance.now();
+    openedRef.current = true;
+    lastInteractionAtRef.current = performance.now();
 
-      const viewer = viewerRef.current;
-      const root = rootRef.current;
-      if (!viewer || !root) return;
+    const viewer = viewerRef.current;
+    const root = rootRef.current;
+    if (!viewer || !root) return;
 
-      root.setAttribute('data-opened', 'true');
+    root.setAttribute('data-opened', 'true');
 
-      const overlay = document.createElement('div');
-      overlay.className = 'dg-open';
-      overlay.style.setProperty('--max-w', `${openedImageMaxWidth}px`);
-      overlay.style.setProperty('--max-h', `${openedImageMaxHeight}px`);
+    const overlay = document.createElement('div');
+    overlay.className = 'dg-open';
+    overlay.style.setProperty('--max-w', `${openedImageMaxWidth}px`);
+    overlay.style.setProperty('--max-h', `${openedImageMaxHeight}px`);
 
-      const img = document.createElement('img');
-      img.src = src;
-      img.alt = 'Imagen';
-      overlay.appendChild(img);
+    const img = document.createElement('img');
+    img.src = src;
+    img.alt = 'Imagen';
+    img.decoding = 'async';
+    img.loading = 'eager';
 
-      viewer.appendChild(overlay);
-      openedElRef.current = overlay;
+    // ✅ CLAVE: ajustar tamaño del overlay al aspecto real de la imagen
+    img.onload = () => {
+      const maxW = openedImageMaxWidth;
+      const maxH = openedImageMaxHeight;
 
-      requestAnimationFrame(() => overlay.classList.add('is-visible'));
-    },
-    [openedImageMaxWidth, openedImageMaxHeight]
-  );
+      const naturalW = img.naturalWidth || 1;
+      const naturalH = img.naturalHeight || 1;
+
+      // escala para que quepa sin deformar
+      const scale = Math.min(maxW / naturalW, maxH / naturalH, 1);
+
+      const finalW = Math.round(naturalW * scale);
+      const finalH = Math.round(naturalH * scale);
+
+      overlay.style.width = `${finalW}px`;
+      overlay.style.height = `${finalH}px`;
+    };
+
+    overlay.appendChild(img);
+
+    viewer.appendChild(overlay);
+    openedElRef.current = overlay;
+
+    requestAnimationFrame(() => overlay.classList.add('is-visible'));
+  },
+  [openedImageMaxWidth, openedImageMaxHeight]
+);
 
   const closeImage = useCallback(() => {
     const root = rootRef.current;
