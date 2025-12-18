@@ -1,63 +1,60 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-F6BTB7PJ0R"></script>
-      <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        
-        gtag('config', 'G-F6BTB7PJ0R');
-    </script>
-    <!-- Google Tag Manager -->
-    <script>
-      (function (w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-        var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s),
-          dl = l != "dataLayer" ? "&l=" + l : "";
-        j.async = true;
-        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-        f.parentNode.insertBefore(j, f);
-      })(window, document, "script", "dataLayer", "GTM-53SBP5LF");
-    </script>
-    <!-- End Google Tag Manager -->
-
     <meta charset="UTF-8" />
+
+    <!-- Favicon / Logo -->
+    <link rel="icon" type="image/svg+xml" href="/assets/img/Logo.svg" />
+
+    <!-- Responsive -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Clean Splash - Mantenimiento de Piscinas</title>
 
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- SEO PRINCIPAL -->
+    <title>Clean Splash | Limpieza y Mantenimiento de Piscinas</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
+    <meta
+      name="description"
+      content="Servicio profesional de limpieza de piscinas y mantenimiento de piscinas. Aspirado de fondo, medición de pH y cloro, tratamiento de agua y mantención periódica. Cotiza con Clean Splash."
     />
 
-    <style>
-      body {
-        font-family: "Poppins", sans-serif;
-        scroll-behavior: smooth;
-      }
-      .hero-bg {
-        background-image: url("https://images.unsplash.com/photo-1561008222-23716145a7e8?q=80&w=2070&auto=format&fit=crop");
-        background-size: cover;
-        background-position: center;
-      }
-    </style>
+    <meta
+      name="keywords"
+      content="limpieza de piscinas, mantenimiento de piscinas, mantenimiento y limpieza de piscinas, aspira fondos de piscina, aspirado de fondo piscina, medición de ph y cloro, medición de pH y cloro, tratamiento de agua piscinas, servicio de piscinas, clean splash"
+    />
 
-    <!-- Importmap DEBE ir después de GTM -->
-    <script type="importmap">
-      {
-        "imports": {
-          "react": "https://esm.sh/react@18.3.1",
-          "react-dom/client": "https://esm.sh/react-dom@18.3.1/client"
-        }
-      }
+    <meta name="author" content="Clean Splash Services" />
+
+    <!-- Open Graph (WhatsApp / Facebook / Instagram) -->
+    <meta property="og:title" content="Clean Splash | Limpieza y Mantenimiento de Piscinas" />
+    <meta
+      property="og:description"
+      content="Limpieza de piscinas y mantenimiento de piscinas: aspirado de fondo, medición de pH y cloro, y mantención periódica. Cotiza con Clean Splash."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/assets/img/Logo.svg" />
+    <meta property="og:url" content="https://cleansplash.cl" />
+
+    <!-- Google Analytics (GA4) - NO TOCAR -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-F6BTBP7J0R"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-F6BTBP7J0R');
+    </script>
+
+    <!-- Google Tag Manager - NO TOCAR -->
+    <script>
+      (function(w,d,s,l,i){
+        w[l]=w[l]||[];
+        w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});
+        var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),
+            dl=l!='dataLayer'?'&l='+l:'';
+        j.async=true;
+        j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+        f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-53RP5LF');
     </script>
   </head>
 
@@ -65,15 +62,15 @@
     <!-- Google Tag Manager (noscript) -->
     <noscript>
       <iframe
-        src="https://www.googletagmanager.com/ns.html?id=GTM-53SBP5LF"
+        src="https://www.googletagmanager.com/ns.html?id=GTM-53RP5LF"
         height="0"
         width="0"
-        style="display: none; visibility: hidden"
+        style="display:none;visibility:hidden"
       ></iframe>
     </noscript>
-    <!-- End Google Tag Manager (noscript) -->
 
     <div id="root"></div>
-    <script type="module" src="/index.jsx"></script>
+
+    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
