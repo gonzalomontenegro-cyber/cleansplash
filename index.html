@@ -1,60 +1,101 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-F6BTB7PJ0R"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag("js", new Date());
+      gtag("config", "G-F6BTB7PJ0R");
+    </script>
+
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-53SBP5LF");
+    </script>
+    <!-- End Google Tag Manager -->
+
     <meta charset="UTF-8" />
-
-    <!-- Favicon / Logo -->
-    <link rel="icon" type="image/svg+xml" href="/assets/img/Logo.svg" />
-
-    <!-- Responsive -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- SEO PRINCIPAL -->
+    <!-- SEO básico -->
     <title>Clean Splash | Limpieza y Mantenimiento de Piscinas</title>
-
     <meta
       name="description"
-      content="Servicio profesional de limpieza de piscinas y mantenimiento de piscinas. Aspirado de fondo, medición de pH y cloro, tratamiento de agua y mantención periódica. Cotiza con Clean Splash."
+      content="Clean Splash: limpieza de piscinas y mantenimiento de piscinas. Aspirado de fondo, medición de pH y cloro, mantenimiento y limpieza de piscinas para agua cristalina y segura."
     />
-
     <meta
       name="keywords"
-      content="limpieza de piscinas, mantenimiento de piscinas, mantenimiento y limpieza de piscinas, aspira fondos de piscina, aspirado de fondo piscina, medición de ph y cloro, medición de pH y cloro, tratamiento de agua piscinas, servicio de piscinas, clean splash"
+      content="limpieza de piscinas, mantenimiento de piscinas, mantenimiento y limpieza de piscinas, aspira fondos de piscina, aspirado de fondo de piscina, medición de ph y cloro, medición de pH, medición de cloro, limpieza piscina, mantención de piscinas, servicio de piscinas, limpieza y mantención de piscinas"
     />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://www.cleansplashservices.cl/" />
 
-    <meta name="author" content="Clean Splash Services" />
+    <!-- Icono / favicon (Logo del proyecto) -->
+    <link rel="icon" type="image/svg+xml" href="/assets/img/Logo.svg" />
+    <link rel="apple-touch-icon" href="/assets/img/Logo.svg" />
 
-    <!-- Open Graph (WhatsApp / Facebook / Instagram) -->
+    <!-- Open Graph (WhatsApp / Facebook) -->
+    <meta property="og:site_name" content="Clean Splash" />
     <meta property="og:title" content="Clean Splash | Limpieza y Mantenimiento de Piscinas" />
     <meta
       property="og:description"
-      content="Limpieza de piscinas y mantenimiento de piscinas: aspirado de fondo, medición de pH y cloro, y mantención periódica. Cotiza con Clean Splash."
+      content="Limpieza de piscinas y mantenimiento de piscinas: aspirado de fondo, medición de pH y cloro, y mantenimiento y limpieza de piscinas."
     />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="/assets/img/Logo.svg" />
-    <meta property="og:url" content="https://cleansplash.cl" />
+    <meta property="og:url" content="https://www.cleansplashservices.cl/" />
+    <meta property="og:image" content="https://www.cleansplashservices.cl/assets/img/Logo.svg" />
 
-    <!-- Google Analytics (GA4) - NO TOCAR -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-F6BTBP7J0R"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-F6BTBP7J0R');
-    </script>
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Clean Splash | Limpieza y Mantenimiento de Piscinas" />
+    <meta
+      name="twitter:description"
+      content="Limpieza de piscinas y mantenimiento de piscinas: aspirado de fondo, medición de pH y cloro, y mantenimiento y limpieza de piscinas."
+    />
+    <meta name="twitter:image" content="https://www.cleansplashservices.cl/assets/img/Logo.svg" />
 
-    <!-- Google Tag Manager - NO TOCAR -->
-    <script>
-      (function(w,d,s,l,i){
-        w[l]=w[l]||[];
-        w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});
-        var f=d.getElementsByTagName(s)[0],
-            j=d.createElement(s),
-            dl=l!='dataLayer'?'&l='+l:'';
-        j.async=true;
-        j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
-        f.parentNode.insertBefore(j,f);
-      })(window,document,'script','dataLayer','GTM-53RP5LF');
+    <meta name="theme-color" content="#0ea5e9" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        scroll-behavior: smooth;
+      }
+      .hero-bg {
+        background-image: url("https://images.unsplash.com/photo-1561008222-23716145a7e8?q=80&w=2070&auto=format&fit=crop");
+        background-size: cover;
+        background-position: center;
+      }
+    </style>
+
+    <!-- Importmap DEBE ir después de GTM -->
+    <script type="importmap">
+      {
+        "imports": {
+          "react": "https://esm.sh/react@18.3.1",
+          "react-dom/client": "https://esm.sh/react-dom@18.3.1/client"
+        }
+      }
     </script>
   </head>
 
@@ -62,15 +103,15 @@
     <!-- Google Tag Manager (noscript) -->
     <noscript>
       <iframe
-        src="https://www.googletagmanager.com/ns.html?id=GTM-53RP5LF"
+        src="https://www.googletagmanager.com/ns.html?id=GTM-53SBP5LF"
         height="0"
         width="0"
-        style="display:none;visibility:hidden"
+        style="display: none; visibility: hidden"
       ></iframe>
     </noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
     <div id="root"></div>
-
-    <script type="module" src="/src/main.jsx"></script>
+    <script type="module" src="/index.jsx"></script>
   </body>
 </html>
